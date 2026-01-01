@@ -10966,6 +10966,8 @@ __metadata:
     react: "npm:19.1.0"
     react-native: "npm:0.81.5"
     react-native-builder-bob: "npm:^0.40.17"
+    react-native-keyboard-controller: "npm:^1.20.3"
+    react-native-reanimated: "npm:^4.2.1"
     release-it: "npm:^19.0.4"
     typescript: "npm:^5.9.2"
   peerDependencies:
