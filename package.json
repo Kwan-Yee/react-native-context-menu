@@ -84,7 +84,9 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-keyboard-controller": "*",
+    "react-native-reanimated": "*"
   },
   "workspaces": [
     "example"

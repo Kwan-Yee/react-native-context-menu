@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "react-native-context-menu": "file:../",
     "@expo/metro-runtime": "~6.1.2",
     "expo": "~54.0.30",
     "expo-status-bar": "~3.0.9",
