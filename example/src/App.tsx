@@ -1,12 +1,10 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-context-menu';
-
-const result = multiply(3, 7);
+import { StyleSheet, View } from 'react-native';
+import { Target } from './Target';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Target />
     </View>
   );
 }
