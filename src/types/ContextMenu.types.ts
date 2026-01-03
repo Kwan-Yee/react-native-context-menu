@@ -1,10 +1,7 @@
 import { type ReactNode } from 'react';
 import { type StyleProp, type ViewStyle } from 'react-native';
 import { type AnimatedRef } from 'react-native-reanimated';
-import type {
-  InstanceOrElement,
-  MeasuredDimensions,
-} from 'react-native-reanimated/lib/typescript/commonTypes';
+import type { MeasuredDimensions } from 'react-native-reanimated/lib/typescript/commonTypes';
 
 export interface ContextMenuListItem {
   label: string;
@@ -32,9 +29,11 @@ export interface ContextMenuExternalProps {
 }
 
 export interface ContextMenuInternalStates {
-  anchorAnimatedRef: AnimatedRef<InstanceOrElement> | null;
+  anchor: ReactNode;
+  anchorAnimatedRef: AnimatedRef | null;
   anchorLayout: MeasuredDimensions | null;
   contextMenuListContainerStyle: StyleProp<ViewStyle>;
+  setAnchor: (anchor: ReactNode) => void;
   setAnchorLayout: (layout: MeasuredDimensions) => void;
   setInternalOpen: (open: boolean) => void;
 }
