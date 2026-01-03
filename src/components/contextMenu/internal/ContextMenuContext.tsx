@@ -14,7 +14,7 @@ import {
   type ContextMenuContextValue,
   type ContextMenuExternalProps,
   OverflowAnchorTreatment,
-} from '../types/ContextMenu.types';
+} from '../../../types/ContextMenu.types';
 
 const defaultCallbacks = () => console.warn('Has to be use within ContextMenuContext');
 
