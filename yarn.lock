@@ -3844,7 +3844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.51.0, @typescript-eslint/utils@npm:^8.0.0":
+"@typescript-eslint/utils@npm:8.51.0, @typescript-eslint/utils@npm:^8.0.0, @typescript-eslint/utils@npm:^8.51.0":
   version: 8.51.0
   resolution: "@typescript-eslint/utils@npm:8.51.0"
   dependencies:
@@ -6074,6 +6074,18 @@ __metadata:
     jest:
       optional: true
   checksum: 10c0/faad39300c36a23aa293fa83a3441bac26a207c1b3da8b25747c4bed7e6a384943577196a692bba9c1b3ad44f28353d607c9bd86665434004bc1ac744a983a6d
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-perfectionist@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "eslint-plugin-perfectionist@npm:5.2.0"
+  dependencies:
+    "@typescript-eslint/utils": "npm:^8.51.0"
+    natural-orderby: "npm:^5.0.0"
+  peerDependencies:
+    eslint: ">=8.45.0"
+  checksum: 10c0/500d84247fa2e356bca4d352c4b359041a993a31e2f92880372f6aa22a7895de8fa4e25c1ba194b16a505fc86055e2ddc51c1915db5b2938143dcbcee0c3885a
   languageName: node
   linkType: hard
 
@@ -9819,6 +9831,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"natural-orderby@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "natural-orderby@npm:5.0.0"
+  checksum: 10c0/d4e8b3bf16636eedc0c99a4cd551cd371732dd8c9766f19c8e153946553d82c12527eab182b8e79d640681aa6cb718273b53662ccf88127d4726307b6e645b2b
+  languageName: node
+  linkType: hard
+
 "negotiator@npm:0.6.3":
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
@@ -10959,6 +10978,7 @@ __metadata:
     del-cli: "npm:^6.0.0"
     eslint: "npm:^9.35.0"
     eslint-config-prettier: "npm:^10.1.8"
+    eslint-plugin-perfectionist: "npm:^5.2.0"
     eslint-plugin-prettier: "npm:^5.5.4"
     jest: "npm:^29.7.0"
     lefthook: "npm:^2.0.3"

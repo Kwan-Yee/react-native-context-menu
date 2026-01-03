@@ -1,6 +1,7 @@
 import { fixupConfigRules } from '@eslint/compat';
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
+import perfectionist from 'eslint-plugin-perfectionist';
 import prettier from 'eslint-plugin-prettier';
 import { defineConfig } from 'eslint/config';
 import path from 'node:path';
@@ -17,10 +18,22 @@ const compat = new FlatCompat({
 export default defineConfig([
   {
     extends: fixupConfigRules(compat.extends('@react-native', 'prettier')),
-    plugins: { prettier },
+    plugins: { prettier, perfectionist },
     rules: {
       'react/react-in-jsx-scope': 'off',
       'prettier/prettier': 'error',
+      'perfectionist/sort-objects': [
+        'error',
+        { type: 'natural', order: 'asc' },
+      ],
+      'perfectionist/sort-interfaces': [
+        'error',
+        { type: 'natural', order: 'asc' },
+      ],
+      'perfectionist/sort-enums': [
+        'error',
+        { type: 'natural', order: 'asc' },
+      ],
     },
   },
   {
