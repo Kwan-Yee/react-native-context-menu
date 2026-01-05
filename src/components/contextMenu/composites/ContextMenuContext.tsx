@@ -13,7 +13,8 @@ import {
   type ContextMenuExternalProps,
 } from '../../../types/ContextMenu.types';
 
-const defaultCallbacks = () => console.warn('Has to be use within ContextMenuContext');
+const defaultCallbacks = () =>
+  console.warn('Has to be use within ContextMenuContext');
 
 export const ContextMenuContext = createContext<ContextMenuContextValue>({
   anchor: null,
@@ -29,10 +30,17 @@ export const ContextMenuContext = createContext<ContextMenuContextValue>({
 });
 
 export const ContextMenu = (props: ContextMenuExternalProps) => {
-  const { contextMenuListContainerStyle, open, overflowAnchorTreatment, sections } = props;
+  const {
+    contextMenuListContainerStyle,
+    open,
+    overflowAnchorTreatment,
+    sections,
+  } = props;
 
   const [internalOpen, setInternalOpen] = useState(false);
-  const [anchorLayout, setAnchorLayout] = useState<MeasuredDimensions | null>(null);
+  const [anchorLayout, setAnchorLayout] = useState<MeasuredDimensions | null>(
+    null
+  );
   const [anchor, setAnchor] = useState<ReactNode>(null);
   const anchorAnimatedRef = useAnimatedRef();
 

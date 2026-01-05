@@ -1,10 +1,12 @@
 import { type ReactNode } from 'react';
 import { View } from 'react-native';
 
-interface ContextMenuListHeaderProps {
+interface ContextMenuListFooterProps {
   children: ReactNode;
 }
 
-export const ContextMenuListHeader = ({ children }: ContextMenuListHeaderProps) => {
+export const ContextMenuListFooter = ({
+  children,
+}: ContextMenuListFooterProps) => {
   return <View>{children}</View>;
 };

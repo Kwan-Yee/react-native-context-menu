@@ -12,7 +12,8 @@ interface ContextMenuAnchorProps {
 }
 
 export const ContextMenuAnchor = ({ children }: ContextMenuAnchorProps) => {
-  const { anchorAnimatedRef, setAnchor, setAnchorLayout } = use(ContextMenuContext);
+  const { anchorAnimatedRef, setAnchor, setAnchorLayout } =
+    use(ContextMenuContext);
 
   useEffect(() => {
     setAnchor(children);

@@ -8,6 +8,8 @@
 
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
+import { ContextMenuListItemIcon } from './ContextMenuListItemIcon';
+import { ContextMenuListItemLabel } from './ContextMenuListItemLabel';
 
 interface ContextMenuListItemProps {
   children: ReactNode;
@@ -16,3 +18,7 @@ interface ContextMenuListItemProps {
 export const ContextMenuListItem = ({ children }: ContextMenuListItemProps) => {
   return <View>{children}</View>;
 };
+
+ContextMenuListItem.LeadingIcon = ContextMenuListItemIcon;
+ContextMenuListItem.Label = ContextMenuListItemLabel;
+ContextMenuListItem.TrailingIcon = ContextMenuListItemIcon;

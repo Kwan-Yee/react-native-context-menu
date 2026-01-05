@@ -21,7 +21,7 @@ export default defineConfig([
     plugins: { prettier, perfectionist },
     rules: {
       'react/react-in-jsx-scope': 'off',
-      'prettier/prettier': ['error', { printWidth: 100 }],
+      'prettier/prettier': ['error', { printWidth: 80 }],
       'perfectionist/sort-objects': [
         'error',
         { type: 'natural', order: 'asc' },
