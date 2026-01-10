@@ -1,5 +1,5 @@
-import { ContextMenuList } from '../composites/ContextMenuList';
-import { ContextMenuListItem } from '../composites/ContextMenuListItem';
+import { ContextMenuList } from '../singleComposable/ContextMenuList';
+import { ContextMenuListItem } from '../singleComposable/ContextMenuListItem';
 
 export const ContextMenuSection = () => {
   return (
