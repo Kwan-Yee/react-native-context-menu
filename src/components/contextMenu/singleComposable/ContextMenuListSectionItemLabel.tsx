@@ -1,12 +1,12 @@
 import type { ReactNode } from 'react';
 import { View } from 'react-native';
 
-interface ContextMenuListItemIconProps {
+interface ContextMenuListItemLabelProps {
   children: ReactNode;
 }
 
-export const ContextMenuListItemIcon = ({
+export const ContextMenuListSectionItemLabel = ({
   children,
-}: ContextMenuListItemIconProps) => {
+}: ContextMenuListItemLabelProps) => {
   return <View>{children}</View>;
 };

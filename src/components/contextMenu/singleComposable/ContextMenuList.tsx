@@ -6,8 +6,7 @@ import { type ReactNode } from 'react';
 import { View } from 'react-native';
 import { ContextMenuListFooter } from './ContextMenuListFooter';
 import { ContextMenuListHeader } from './ContextMenuListHeader';
-import { ContextMenuListItem } from './ContextMenuListItem';
-import { ContextMenuListSeparator } from './ContextMenuListSeparator';
+import { ContextMenuListSection } from './ContextMenuListSection';
 
 interface ContextMenuListProps {
   children: ReactNode;
@@ -17,7 +16,6 @@ export const ContextMenuList = ({ children }: ContextMenuListProps) => {
   return <View>{children}</View>;
 };
 
-ContextMenuList.Item = ContextMenuListItem;
-ContextMenuList.Separator = ContextMenuListSeparator;
 ContextMenuList.Header = ContextMenuListHeader;
+ContextMenuList.Section = ContextMenuListSection;
 ContextMenuList.Footer = ContextMenuListFooter;

@@ -12,7 +12,6 @@ export interface ContextMenuListItem {
 
 export interface ContextMenuListSection {
   items: ContextMenuListItem[];
-  sectionTitle?: string;
 }
 
 export enum OverflowAnchorTreatment {
@@ -38,4 +37,5 @@ export interface ContextMenuInternalStates {
   setInternalOpen: (open: boolean) => void;
 }
 
-export type ContextMenuContextValue = ContextMenuInternalStates & ContextMenuExternalProps;
+export type ContextMenuContextValue = ContextMenuInternalStates &
+  ContextMenuExternalProps;

@@ -7,6 +7,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export const ContextMenuListSeparator = () => {
+export const ContextMenuListSectionSeparator = () => {
   return <View style={styles.separator} />;
 };
