@@ -3,8 +3,13 @@
  * [ ] - Responsible for holding the blur, context menu list and target if needed. consumer can opt in for 'modal-like' behaviour or not
  */
 
+import type { ReactNode } from 'react';
 import { OverKeyboardView } from 'react-native-keyboard-controller';
 
-export function ContextMenuOverlay() {
-  return <OverKeyboardView visible={true}>ContextMenuOverlay</OverKeyboardView>;
+interface ContextMenuOverlayProps {
+  children: ReactNode;
+}
+
+export function ContextMenuOverlay({ children }: ContextMenuOverlayProps) {
+  return <OverKeyboardView visible={true}>{children}</OverKeyboardView>;
 }
